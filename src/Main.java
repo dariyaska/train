@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//
+
 
 
         Scanner scanner = new Scanner(System.in);
@@ -35,7 +35,7 @@ public class Main {
         System.out.print("Введите грузоподъемность первого вагона: ");
         int carriageCapacity1 = scanner.nextInt();
 
-        System.out.print("Введите вместимость пассажиров первого вагона: ");
+        System.out.print("Введите вместимость пассажирок первого вагона: ");
         int passengerCapacity1 = scanner.nextInt();
 
         scanner.nextLine();
@@ -43,7 +43,7 @@ public class Main {
         System.out.print("Введите грузоподъемность второго вагона: ");
         int carriageCapacity2 = scanner.nextInt();
 
-        System.out.print("Введите вместимость пассажиров второго вагона: ");
+        System.out.print("Введите вместимость пассажирок второго вагона: ");
         int passengerCapacity2 = scanner.nextInt();
 
 
@@ -57,12 +57,15 @@ public class Main {
         train.addCarriage(carriage2);
 
 
-        System.out.println("Детали поезда:Опаздание на час");
+        System.out.println("Детали поезда: Только для женщин");
         System.out.println("Название поезда: " + train.getName());
         System.out.println("Общая грузоподъемность: " + train.calculateTotalCargoCapacity());
-        System.out.println("Общая вместимость пассажиров: " + train.calculateTotalPassengerCapacity());
+        System.out.println("Общая вместимость пассажирок: " + train.calculateTotalPassengerCapacity());
 
 
         scanner.close();
+
+
     }
+
 }
